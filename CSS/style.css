@@ -1,0 +1,621 @@
+/* ---------------------- Shared Styles--------------------- */
+html {
+    scroll-padding-top: 80px;
+}
+
+body {
+
+    font-family: 'Poppins';
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat';
+}
+
+::selection {
+    background-color: #1C1C1C;
+}
+
+.max-width-200 {
+    width: 200px;
+}
+
+
+/* -----------Navbar--------------- */
+.navbar-nav .nav-link.active:after {
+    color: white;
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.navbar-nav.nav-link.active {
+    color: #1C1C1C !important;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 81%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 10%;
+    left: 8px;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+} */
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.616);
+}
+
+.nav-link {
+    color: white !important;
+}
+
+/* -----------Home------------ */
+.home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.562)), url(../imgs/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 150px;
+}
+
+#container {
+    text-align: center;
+}
+
+#text {
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+    letter-spacing: 2px;
+}
+
+#cursor {
+    display: inline-block;
+    vertical-align: middle;
+    width: 3px;
+    height: 35px;
+    background-color: white;
+    animation: blink .25s step-end infinite;
+}
+
+@keyframes blink {
+
+    from,
+    to {
+        background-color: transparent
+    }
+
+    50% {
+        background-color: white;
+    }
+}
+
+/* Note : This is way to use typing and deleting animation using only CSS */
+/* .home-content .content p::after {
+    content: "  |";
+    animation: typing 1.5s linear 1s infinite alternate;
+
+}
+
+@keyframes typing {
+    0% {
+        content: " L|";
+    }
+
+    8% {
+        content: " La|";
+    }
+
+    16% {
+        content: " Lar|";
+    }
+
+    24% {
+        content: " Larr|";
+    }
+
+    32% {
+        content: " Larry|";
+    }
+
+    40% {
+        content: " Larry |";
+    }
+
+    48% {
+        content: " Larry D|";
+    }
+
+    56% {
+        content: " Larry Da |";
+    }
+
+    64% {
+        content: " Larry Dan|";
+    }
+
+    72% {
+        content: " Larry Dani|";
+    }
+
+    80% {
+        content: " Larry Danie|";
+    }
+
+    88% {
+        content: " Larry Daniel|";
+    }
+
+    100% {
+        content: "Larry Daniels|";
+    }
+
+}  */
+
+.hello {
+    font-size: 60px;
+    color: white;
+    font-weight: 800;
+
+}
+
+.iam {
+    font-size: 40px;
+    font-weight: lighter !important;
+    color: white;
+}
+
+.anima {
+    font-size: 43px;
+    font-weight: lighter !important;
+    color: white;
+}
+
+.icon-size {
+    border: 1px solid transparent;
+    width: 35px;
+    height: 35px;
+    background-color: #030A0F;
+    color: white;
+
+    transition: all 1s;
+}
+
+.icon-size a {
+    color: white;
+}
+
+.icon-size:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.897);
+    color: #1C1C1C;
+    transform: scale(1.01);
+}
+
+.icon-size a:hover {
+    color: #1C1C1C !important;
+}
+
+/* ---------------------About------------------- */
+
+.layer-border {
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    background-position: center center;
+    width: 95%;
+
+}
+
+.try-m {
+    margin-top: -21px;
+}
+
+.img-w {
+    width: 95%;
+}
+
+.img-container {
+    top: -30px;
+    left: 7%;
+}
+
+/* ---------------------------------------------------------------------------- */
+.about-h1 {
+    color: var(--main-color);
+    font-weight: bolder;
+    position: relative;
+
+}
+
+
+.about-h1::after {
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    background-color: #1C1C1C;
+
+    bottom: 20%;
+    border-radius: 50%;
+}
+
+.aboutp {
+    color: rgb(153, 153, 153);
+    ;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.aboutp2 {
+    line-height: 1.6;
+    font-size: 15px;
+    color: rgb(116, 129, 130);
+}
+
+.prog-col {
+    background-color: #1C1C1C;
+}
+
+.but1 {
+    border: 1px solid #1C1C1C;
+    border-radius: 5px;
+    background-color: #1C1C1C;
+    color: white;
+    font-size: 14px;
+
+}
+
+.but1:hover {
+    background-color: white;
+
+}
+
+.cv {
+    list-style: none;
+}
+
+.but1:hover a {
+    color: #1C1C1C !important;
+}
+
+.but2 {
+    border: 1px solid #1C1C1C;
+    border-radius: 5px;
+    background-color: white;
+    color: #1C1C1C;
+    font-size: 14px;
+}
+
+.but2:hover {
+    background-color: #1C1C1C;
+    color: white;
+
+}
+
+/* --------------Services-------------- */
+.ser-header {
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    width: fit-content;
+    height: 45px;
+
+}
+
+.ser-layer {
+    top: -18px;
+}
+
+.services {
+    margin-top: 150px;
+    background-color: #F7F7F7;
+    margin-bottom: 50px;
+    padding-bottom: 150px;
+    padding-top: 90px;
+}
+
+.ser-header p {
+    font-size: 40px;
+    font-weight: bolder;
+
+}
+
+.ser-header p::after {
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    background-color: #1C1C1C;
+    bottom: 26%;
+    border-radius: 50%;
+}
+
+.icon-cir {
+    width: 70px;
+    height: 70px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    margin: auto;
+    background-color: #e6e1e1cc;
+}
+
+.card-content:hover .icon-cir {
+    background-color: black;
+    cursor: pointer;
+}
+
+.card-content:hover .icon-col {
+    color: white;
+    cursor: pointer;
+}
+
+.card-h {
+    font-size: 20px;
+    font-weight: 900;
+    color: #1C1C1C;
+    padding-top: 5px;
+}
+
+.card-p {
+    color: #939493;
+    font-size: 14px;
+}
+
+/* -----------------Works--------------- */
+.nav-pills .nav-link {
+    color: #1C1C1C !important;
+    border-radius: 100px;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .nav-link:hover {
+    color: white !important;
+    background-color: #1C1C1C;
+
+}
+
+.prof-layer {
+    top: 3%;
+    left: 3%;
+    right: 3%;
+    bottom: -1%;
+    transition: all 0.75s;
+
+}
+
+.work-item .prof-layer {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.work-item:hover .prof-layer,
+.content {
+    background-color: white;
+    transform: scale(1.001);
+    bottom: 3%;
+}
+
+.content {
+    margin-top: 35% !important;
+    /* margin-left: 35%;  */
+    height: 100%;
+    background-color: transparent;
+}
+
+.icon-lay {
+    color: white;
+    border: 1px solid #1C1C1C;
+    background-color: #1C1C1C;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    transition: all 1.5s;
+}
+
+.work-item:hover .layer-icons {
+    transform: translate(2%, 2%);
+}
+
+.icon-lay:hover {
+    color: #1C1C1C;
+    background-color: white;
+}
+
+.content {
+    opacity: 0;
+    transition: all 0.75s;
+}
+
+.work-item:hover .content {
+    opacity: 1;
+
+}
+
+/* -------------------------claints------------- */
+.client {
+    background-color: #F7F7F7;
+    padding-top: 60px;
+}
+
+.cur-p {
+    color: #939493;
+    padding-top: 40px;
+}
+
+.cur-p2 {
+    color: #939493;
+    font-size: 13px;
+    padding-bottom: 20px;
+}
+
+.cur-h {
+    color: #1C1C1C;
+    font-weight: bold;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #9e9e9e !important;
+    width: 11px !important;
+    height: 11px !important;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+/* --------------count--------------- */
+.counter {
+    margin-top: 80px;
+}
+
+.couterp {
+    color: #939493;
+}
+
+/* ----------------------Team---------------- */
+.team {
+    background-color: #F7F7F7;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.team-bg {
+    background-color: #5B5B5B;
+}
+
+.team-img {
+    width: 100%;
+}
+
+.team-layer {
+    left: 2%;
+    right: 2%;
+    top: 2%;
+    bottom: 2%;
+    background-color: white;
+    opacity: 0;
+    transition: all 1.2s;
+}
+
+.king-div:hover .team-layer {
+    transform: rotateY(180deg) scale(1, 1);
+    opacity: 1;
+
+}
+
+.big-team-icons {
+    transition: all 1.2s;
+}
+
+.king-div:hover .big-team-icons {
+
+
+    transform: rotateY(180deg);
+
+}
+
+.team-hov {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.team-hov:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.big-team-content:hover .zoom img {
+    transform: scale(1.2);
+}
+
+.zoom img {
+    transition: all 2s;
+}
+
+/* -----------------------Finally Contact heeeeeeee لقد هرمناااا-------- */
+.contact {
+    padding-top: 70px;
+}
+
+.contact-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #F7F7F7;
+    border-radius: 50%;
+}
+
+.big-contact:hover .contact-icon {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.big-contact:hover .fa-regular {
+    color: white !important;
+}
+
+.big-contact:hover .fa-solid {
+    color: white !important;
+}
+
+.change {
+    width: 81%;
+}
+
+.contact-content {
+
+    padding: 25px;
+}
+
+.con-ph {
+    color: #9e9e9e;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.w-form {
+    width: 48%;
+
+}
+
+.last-but {
+    color: white;
+    font-weight: bold;
+    background-color: #0c0c0c;
+    border: 1px solid #0c0c0c;
+    margin-bottom: 40px;
+}
+
+.last-but:hover {
+    color: #0c0c0c;
+    background-color: white;
+}
+
+.area {
+    resize: both;
+}
+
+/* ---------------footer------------- */
+.foot {
+    background-color: #1C1C1C;
+}
+
+.foot p {
+    font-size: 14px;
+}
